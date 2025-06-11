@@ -1,0 +1,210 @@
+#level-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#level-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+#level-2 .peas {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+#level-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#level-3 .peas {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+#level-3 .onions {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+}
+
+#level-3 .tomatoes {
+  grid-column: 1 / span 2;
+  grid-row: 2;
+}
+
+#level-3 .lettuce {
+  grid-column: 3 / span 1;
+  grid-row: 2;
+}
+
+#level-3 .carrots {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+#level-4 {
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 2;
+}
+
+#level-4 .peas {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+#level-4 .onions {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+
+#level-4 .carrots {
+  grid-column: 4 / span 1;
+  grid-row: 1 / span 2;
+}
+
+#level-4 .tomatoes {
+  grid-column: 1 / span 1;
+  grid-row: 2 / span 1;
+}
+
+#level-4 .lettuce {
+  grid-column: 2 / span 1;
+  grid-row: 2 / span 1;
+}
+
+#level-5 {
+  display: grid;
+  grid-template-columns: 5;
+  grid-template-rows: 3;
+}
+
+#level-5 .carrots {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 3;
+}
+
+#level-5 .tomatoes {
+  grid-column: 2 / span 3;
+  grid-row: 3 / span 1;
+}
+
+#level-5 .onions {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 2;
+}
+
+#level-5 .peas {
+  grid-column: 4 / span 2;
+  grid-row: 2 / span 1;
+}
+
+#level-5 .lettuce {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+}
+
+#level-6 {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(80px, 1fr));
+  grid-template-rows: repeat(3, 5rem);
+}
+
+/* Peas */
+#level-6 p:nth-child(1) {
+  /* First pea */
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#level-6 p:nth-child(6) {
+  /* Second pea */
+  grid-column: 6;
+  grid-row: 1;
+}
+
+#level-6 p:nth-child(11) {
+  /* Third pea */
+  grid-column: 5;
+  grid-row: 2;
+}
+
+/* Onions */
+#level-6 p:nth-child(2) {
+  /* First onion */
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#level-6 p:nth-child(7) {
+  /* Second onion */
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#level-6 p:nth-child(12) {
+  /* Third onion */
+  grid-column: 6;
+  grid-row: 2;
+}
+
+/* Tomatoes */
+#level-6 p:nth-child(3) {
+  /* First tomato */
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#level-6 p:nth-child(8) {
+  /* Second tomato */
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#level-6 p:nth-child(13) {
+  /* Third tomato */
+  grid-column: 1;
+  grid-row: 3;
+}
+
+/* Lettuce */
+#level-6 p:nth-child(4) {
+  /* First lettuce */
+  grid-column: 4;
+  grid-row: 1;
+}
+
+#level-6 p:nth-child(9) {
+  /* Second lettuce */
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#level-6 p:nth-child(14) {
+  /* Third lettuce */
+  grid-column: 2;
+  grid-row: 3;
+}
+
+/* Carrots */
+#level-6 p:nth-child(5) {
+  /* First carrot */
+  grid-column: 5;
+  grid-row: 1;
+}
+
+#level-6 p:nth-child(10) {
+  /* Second carrot */
+  grid-column: 4;
+  grid-row: 2;
+}
+
+#level-6 p:nth-child(15) {
+  /* Third carrot */
+  grid-column: 3;
+  grid-row: 3;
+}
